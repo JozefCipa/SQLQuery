@@ -1,7 +1,9 @@
-# SqlQuery
+# SQLQuery
 Loads SQL queries from files to your code.
+
 Just define queries with logical context in separate files, add `@SQLName name` to each part and simply import your query to code.
 
+It's making your code **shorter**, **cleaner** and **maintainable** for you and your collaborators.
 ## How to use it ?
 
 ```php
