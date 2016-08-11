@@ -64,9 +64,9 @@ class SQLQuery{
             throw new Exception("File $filename doesn't exist in directory " . self::$dir);
         
         if ($this->sqlPart == '*')
-            echo $this->getSQL($filename);
+            return $this->getSQL($filename);
         else
-            echo $this->getSQLPart($this->sqlPart, $filename);
+            return $this->getSQLPart($this->sqlPart, $filename);
 
     }
 
