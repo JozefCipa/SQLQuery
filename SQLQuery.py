@@ -3,7 +3,6 @@
 import glob
 from os.path import basename
 import re
-# TODO add comments and upload on GitHub
 __author__ = "jozef_cipa"
 
 
@@ -44,9 +43,9 @@ class SQLQuery:
             raise Exception("File " + filename + " doesn't exists in directory" + SQLQuery._dir)
 
         if self.sql_part == '*':
-            print(self.get_sql(filename))
+            return self.get_sql(filename)
         else:
-            print(self.get_sql_part(self.sql_part, filename))
+            return self.get_sql_part(self.sql_part, filename)
 
     def _file_exists(self, filename):
         """ Check if given filename exists in sql directory """
